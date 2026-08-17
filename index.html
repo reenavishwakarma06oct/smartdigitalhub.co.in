@@ -1,407 +1,288 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Smart Digital Hub — ATS resume rebuilds, LinkedIn optimization and interview prep for job seekers who want to get past the filter and into the room.">
-<title>Smart Digital Hub | Career Consulting</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="SmartDigitalHub certification study materials, practice questions, revision guides and study plans.">
+<title>SmartDigitalHub | Certification Study Materials</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#f4f6fa;
-    --ink-soft:#98a1b6;
-    --paper:#0a0d13;
-    --paper-raised:#141925;
-    --line:#262c3d;
-    --amber:#3fe0c7;
-    --amber-dim:rgba(63,224,199,.16);
-    --navy-deep:#05070c;
-    --good:#6ee7a0;
-    --radius:4px;
+    --ink:#33203B;
+    --ink-soft:#6B5570;
+    --paper:#F2EFEE;
+    --paper-card:#FFFFFF;
+    --line:#DAD3D8;
+    --highlighter:#C7E86B;
+    --highlighter-soft:#E4F3B8;
+    --check:#1E8A7A;
+    --pen:#C4432E;
+    --radius:3px;
   }
-  *{box-sizing:border-box;margin:0;padding:0}
+  *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{
-    font-family:'IBM Plex Sans',Arial,sans-serif;
-    color:var(--ink);
-    background:var(--paper);
-    line-height:1.6;
-    font-size:16px;
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',Arial,sans-serif;line-height:1.6;
+    background-image:
+      linear-gradient(var(--paper) 0px, transparent 1px);
   }
   a{text-decoration:none;color:inherit}
-  .container{width:min(1180px,92%);margin:auto}
-  .eyebrow{
-    font-family:'IBM Plex Mono',monospace;
-    font-size:12.5px;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-    color:var(--amber);
-    font-weight:600;
-  }
-  h1,h2,h3{font-family:'Fraunces',Georgia,serif;color:var(--ink);letter-spacing:-.01em}
+  .container{max-width:1120px;width:92%;margin:0 auto}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;margin:0;color:var(--ink)}
+  .muted{color:var(--ink-soft)}
 
-  /* header */
-  header{background:var(--paper-raised);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
-  .nav{height:74px;display:flex;align-items:center;justify-content:space-between}
-  .logo{font-family:'Fraunces',serif;font-size:21px;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:9px}
-  .logo .mark{
-    width:30px;height:30px;background:var(--amber);color:var(--navy-deep);
-    display:grid;place-items:center;border-radius:3px;
-    font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;
-    transform:rotate(-3deg);
-  }
-  .navlinks{display:flex;gap:30px;align-items:center}
-  .navlinks a.link{font-weight:500;color:var(--ink-soft);font-size:15px}
-  .navlinks a.link:hover{color:var(--ink)}
-  .btn{
-    display:inline-flex;align-items:center;gap:8px;
-    background:var(--ink);color:var(--navy-deep);padding:12px 22px;border-radius:var(--radius);
-    font-weight:600;font-size:14.5px;border:1px solid var(--ink);cursor:pointer;
-    transition:transform .15s ease, background .15s ease, border-color .15s ease;
-  }
-  .btn:hover{background:var(--amber);border-color:var(--amber);transform:translateY(-1px)}
-  .btn.amber{background:var(--amber);border-color:var(--amber);color:var(--navy-deep)}
-  .btn.amber:hover{background:#2bc4ac;border-color:#2bc4ac}
-  .btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-  .btn.ghost:hover{border-color:var(--ink)}
+  /* ---------- nav ---------- */
+  nav.top{position:sticky;top:0;z-index:20;background:rgba(240,241,234,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .navrow{height:68px;display:flex;align-items:center;justify-content:space-between}
+  .logo{font-family:'Fraunces',serif;font-size:20px;font-weight:700;letter-spacing:-.01em}
+  .logo em{font-style:normal;background:linear-gradient(180deg,transparent 62%,var(--highlighter) 62%)}
+  .navlinks{display:flex;gap:26px;font-size:14px;color:var(--ink-soft);font-weight:500}
+  .navlinks a:hover{color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--paper);padding:12px 20px;border-radius:var(--radius);font-weight:600;font-size:14px;border:1px solid var(--ink);transition:transform .15s ease, box-shadow .15s ease}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 0 var(--ink)}
+  .btn.ghost{background:transparent;color:var(--ink)}
+  .btn.mark{background:var(--highlighter);color:var(--ink);border-color:var(--ink)}
+  .btn.mark:hover{box-shadow:0 6px 0 0 #C9A70F}
+  @media(prefers-reduced-motion:reduce){.btn:hover{transform:none;box-shadow:none}}
 
-  /* hero */
+  /* ---------- hero ---------- */
   .hero{padding:76px 0 90px}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
-  h1{font-size:clamp(36px,4.6vw,54px);line-height:1.08;margin:16px 0 20px}
-  h1 em{font-style:italic;color:var(--amber);font-weight:500}
-  .hero p.lede{font-size:18px;color:var(--ink-soft);max-width:520px;margin-bottom:30px}
-  .actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
-  .trust-row{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--ink-soft);letter-spacing:.02em}
+  .herogrid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .badge{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:var(--paper-card);border:1px solid var(--line);padding:7px 12px;border-radius:20px;color:var(--ink-soft)}
+  h1{font-size:clamp(38px,5.2vw,58px);line-height:1.06;margin:20px 0 18px;letter-spacing:-.01em}
+  h1 .hl{background:linear-gradient(180deg,transparent 55%,var(--highlighter-soft) 55%)}
+  .lead{font-size:18px;color:var(--ink-soft);max-width:520px}
+  .actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 14px}
+  .trustline{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);letter-spacing:.04em}
 
-  /* scanner card — signature element */
-  .scan-wrap{position:relative}
-  .scan-card{
-    background:var(--paper-raised);border:1px solid var(--line);border-radius:var(--radius);
-    box-shadow:0 24px 60px rgba(15,22,38,.12);
-    padding:26px 26px 22px;position:relative;overflow:hidden;
+  /* signature: study-card stack */
+  .stack{position:relative;height:400px}
+  .study-card{position:absolute;width:88%;max-width:340px;background:var(--paper-card);border:1px solid var(--line);border-radius:6px;box-shadow:0 18px 34px rgba(28,37,65,.14)}
+  .study-card.back-1{top:34px;left:6%;transform:rotate(-6deg);height:230px;opacity:.75}
+  .study-card.back-2{top:60px;left:14%;transform:rotate(4deg);height:230px;opacity:.55}
+  .study-card.front{top:0;left:2%;padding:22px 22px 20px;height:270px;
+    background-image:repeating-linear-gradient(var(--paper-card) 0 27px, var(--line) 27px 28px);
+    background-position:0 46px;
   }
-  .scan-card::before{
-    content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--amber);
-  }
-  .scan-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px;padding-left:8px}
-  .scan-head .fname{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft)}
-  .scan-head .fname strong{color:var(--ink)}
-  .score-pill{
-    font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;
-    background:var(--amber-dim);color:var(--amber);padding:6px 10px;border-radius:999px;
-    display:flex;align-items:center;gap:7px;white-space:nowrap;
-  }
-  .score-pill .dot{width:7px;height:7px;border-radius:50%;background:var(--good)}
-  .scan-body{position:relative;padding-left:8px}
-  .resume-line{height:9px;background:#232a3a;border-radius:2px;margin-bottom:9px;position:relative}
-  .resume-line.w1{width:52%;height:14px;background:#2c3448}
-  .resume-line.w2{width:34%;margin-bottom:16px}
-  .resume-line.w3{width:96%}
-  .resume-line.w4{width:88%}
-  .resume-line.w5{width:91%}
-  .resume-line.w6{width:70%}
-  .kw{
-    display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:11.5px;
-    background:transparent;color:transparent;border-radius:2px;padding:1px 5px;
-    transition:background .5s ease, color .5s ease;
-  }
-  .kw.hit{background:var(--amber-dim);color:var(--amber)}
-  .scan-line{
-    position:absolute;left:0;right:0;height:26px;top:0;
-    background:linear-gradient(180deg, rgba(63,224,199,0) 0%, rgba(63,224,199,.22) 50%, rgba(63,224,199,0) 100%);
-    border-top:1px solid rgba(63,224,199,.8);
-    pointer-events:none;
-  }
-  .scan-foot{display:flex;justify-content:space-between;align-items:center;margin-top:20px;padding-top:16px;border-top:1px dashed var(--line);padding-left:8px}
-  .scan-foot .label{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--ink-soft)}
-  .scan-foot .kwcount strong{color:var(--ink)}
-  .caption{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);margin-top:14px;text-align:center}
+  .study-card.front::after{content:"";position:absolute;top:0;right:0;width:26px;height:26px;background:var(--paper);
+    clip-path:polygon(100% 0, 0 0, 100% 100%);border-bottom:1px solid var(--line);border-left:1px solid var(--line)}
+  .card-topline{display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-soft);letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px}
+  .card-title{font-family:'Fraunces',serif;font-weight:600;font-size:19px;margin-bottom:10px}
+  .card-body{font-size:14px;color:var(--ink-soft)}
+  .card-body mark{background:var(--highlighter);color:var(--ink);padding:0 3px;border-radius:2px}
+  .pass-stamp{position:absolute;bottom:16px;right:18px;width:66px;height:66px;border:2px solid var(--check);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;transform:rotate(-14deg);color:var(--check);
+    font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:11px;letter-spacing:.05em;text-align:center;line-height:1.2}
 
-  /* generic sections */
-  section{padding:88px 0}
-  .section-head{max-width:640px;margin:0 0 46px}
-  .section-head.center{margin:0 auto 50px;text-align:center}
-  .section-head h2{font-size:clamp(28px,3.4vw,38px);margin-top:10px;line-height:1.15}
-  .section-head p{color:var(--ink-soft);font-size:16.5px;margin-top:10px}
+  /* ---------- section shell ---------- */
+  section{padding:66px 0}
+  .sec-head{max-width:640px;margin:0 0 36px}
+  .sec-head h2{font-size:32px;margin-bottom:10px}
+  .sec-head .eyebrow{display:block;margin-bottom:10px}
 
-  /* services as file tabs */
-  .services{background:var(--paper-raised);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-  .svc{background:var(--paper-raised);padding:30px 26px;position:relative;transition:background .15s ease}
-  .svc:hover{background:#1a2030}
-  .svc .tab{
-    display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;
-    color:var(--navy-deep);background:var(--ink);padding:4px 9px;border-radius:2px;letter-spacing:.03em;margin-bottom:16px;
-  }
-  .svc.featured .tab{background:var(--amber);color:var(--navy-deep)}
-  .svc h3{font-size:19px;margin-bottom:8px;font-weight:600;font-family:'Fraunces',serif}
-  .svc p{color:var(--ink-soft);font-size:14.5px;margin-bottom:20px}
-  .svc .price{font-family:'IBM Plex Mono',monospace;font-size:16px;font-weight:600;color:var(--ink)}
-  .svc .price span{color:var(--ink-soft);font-weight:400;font-size:13px}
+  /* ---------- packs (index cards) ---------- */
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .pack{background:var(--paper-card);border:1px solid var(--line);border-radius:6px;padding:26px 24px 24px;position:relative;transition:transform .15s ease, box-shadow .15s ease}
+  .pack:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(28,37,65,.12)}
+  .pack::before{content:"";position:absolute;left:24px;top:0;width:36px;height:6px;background:var(--highlighter);border-radius:0 0 3px 3px}
+  .pack .kicker{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-soft);letter-spacing:.08em;text-transform:uppercase;margin-top:10px}
+  .pack h3{font-size:22px;margin:10px 0 8px}
+  .pack p{color:var(--ink-soft);font-size:14.5px;min-height:66px}
+  .pack .price{font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:600;margin:8px 0 18px}
+  .pack .btn{width:100%;justify-content:center}
 
-  /* process */
-  .process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative;counter-reset:step}
-  .process-grid::before{
-    content:"";position:absolute;top:19px;left:6%;right:6%;height:1px;
-    background:repeating-linear-gradient(90deg,var(--line) 0 8px, transparent 8px 14px);
-    z-index:0;
-  }
-  .step{position:relative;padding:0 26px;z-index:1}
-  .step:first-child{padding-left:0}
-  .step:last-child{padding-right:0}
-  .step .stepnum{
-    width:38px;height:38px;border-radius:50%;background:var(--paper);border:1px solid var(--ink);
-    display:grid;place-items:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13px;
-    margin-bottom:22px;position:relative;
-  }
-  .step h3{font-size:19px;margin-bottom:9px}
-  .step p{color:var(--ink-soft);font-size:14.5px}
+  /* ---------- how it works (exam questions) ---------- */
+  .dark{background:var(--ink);color:var(--paper)}
+  .dark .sec-head .eyebrow{color:#A9B0C9}
+  .dark .sec-head h2{color:var(--paper)}
+  .dark .sec-head p{color:#B7BEDA}
+  .qsteps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .qstep{border:1px solid #333d5c;border-radius:6px;padding:24px}
+  .qnum{font-family:'IBM Plex Mono',monospace;color:var(--highlighter);font-size:14px;font-weight:600;letter-spacing:.05em}
+  .qstep h3{color:var(--paper);font-size:19px;margin:10px 0 8px}
+  .qstep p{color:#B7BEDA;font-size:14.5px;margin:0}
 
-  /* cta */
-  .cta{background:var(--navy-deep);color:#fff;text-align:center;position:relative;overflow:hidden}
-  .cta::before{
-    content:"";position:absolute;inset:0;
-    background:radial-gradient(600px 260px at 50% 0%, rgba(63,224,199,.18), transparent 70%);
-  }
-  .cta .container{position:relative}
-  .cta h2{color:#fff;font-size:clamp(26px,3.6vw,36px)}
-  .cta p{color:#aab2c4;margin:14px auto 30px;max-width:560px;font-size:16.5px}
-  .cta .eyebrow{color:var(--amber)}
+  /* ---------- certifications ---------- */
+  .certgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .cert{background:var(--paper-card);border:1px solid var(--line);border-radius:6px;padding:20px;transition:border-color .15s ease}
+  .cert:hover{border-color:var(--ink)}
+  .cert .code{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;color:var(--ink-soft);border:1px solid var(--line);border-radius:12px;padding:3px 9px;margin-bottom:12px}
+  .cert h3{font-size:17px;margin:0 0 8px}
+  .cert p{font-size:13.5px;color:var(--ink-soft);margin:0 0 14px;min-height:56px}
+  .cert a{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:var(--ink);border-bottom:1px solid var(--highlighter)}
 
-  footer{background:var(--navy-deep);color:#8b93a7;padding:34px 0}
-  .footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
-  .footer .fbrand{font-family:'Fraunces',serif;color:#fff;font-weight:600;font-size:16px}
-  .footer .small{font-size:13.5px}
-  .foot-links .social{font-size:13.5px;font-weight:600;color:var(--amber);border-bottom:1px solid transparent}
-  .foot-links .social:hover{border-bottom-color:var(--amber)}
+  /* ---------- FAQ (answer key) ---------- */
+  .faq{max-width:760px;margin:0 auto}
+  .faq details{background:var(--paper-card);border:1px solid var(--line);border-radius:6px;padding:18px 20px;margin:10px 0}
+  .faq summary{font-weight:600;cursor:pointer;list-style:none;display:flex;align-items:center;gap:12px;font-size:15.5px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::before{content:"✕";flex:0 0 auto;width:22px;height:22px;border-radius:50%;border:1.5px solid var(--pen);color:var(--pen);
+    display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+  .faq details[open] summary::before{content:"✓";border-color:var(--check);color:var(--check)}
+  .faq p{color:var(--ink-soft);margin:12px 0 2px 34px;font-size:14.5px}
+
+  /* ---------- CTA ---------- */
+  .cta{text-align:center;background:var(--ink);color:var(--paper);border-radius:10px;padding:52px 24px;position:relative;overflow:hidden}
+  .cta::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(transparent 0 34px, rgba(255,255,255,.04) 34px 35px)}
+  .cta h2{color:var(--paper);position:relative}
+  .cta p{color:#B7BEDA;position:relative;margin:10px 0 24px}
+  .cta .btn{position:relative}
+
+  /* ---------- disclaimer ---------- */
+  .disclaimer{border:1px solid var(--line);border-radius:8px;padding:32px;background:var(--paper-card)}
+  .disclaimer h2{font-size:24px;margin-bottom:12px}
+  .disclaimer p{color:var(--ink-soft);font-size:14.5px}
+
+  footer{padding:28px 0;border-top:1px solid var(--line)}
+  .foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft)}
 
   @media(max-width:860px){
     .navlinks{display:none}
-    .hero-grid{grid-template-columns:1fr}
-    .hero{padding-top:48px}
-    .svc-grid{grid-template-columns:1fr}
-    .process-grid{grid-template-columns:1fr;gap:34px}
-    .process-grid::before{display:none}
-    .step{padding:0}
+    .herogrid{grid-template-columns:1fr}
+    .stack{height:320px;margin-top:20px}
+    .grid3,.qsteps{grid-template-columns:1fr}
+    .certgrid{grid-template-columns:repeat(2,1fr)}
   }
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto}
-    .btn{transition:none}
-  }
-  :focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+  @media(max-width:520px){.certgrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header>
-  <div class="container nav">
-    <a class="logo" href="#"><span class="mark">SD</span>Smart Digital Hub</a>
-    <nav class="navlinks">
-      <a class="link" href="#services">Services</a>
-      <a class="link" href="#process">How it works</a>
-      <a class="link" href="#contact">Contact</a>
+
+<nav class="top"><div class="container navrow">
+  <a class="logo" href="#">Smart<em>Digital</em>Hub</a>
+  <div class="navlinks">
+    <a href="#packs">Materials</a><a href="#certifications">Certifications</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+  </div>
+  <a class="btn" href="#packs">Explore packs</a>
+</div></nav>
+
+<header class="hero"><div class="container herogrid">
+  <div>
+    <span class="badge">Certification prep · India · USA · UK · Europe</span>
+    <h1>Study notes that get<br>you to <span class="hl">exam day</span> ready.</h1>
+    <p class="lead">Original PDF study notes, practice questions and revision guides — written to be understood, not memorised.</p>
+    <div class="actions">
+      <a class="btn mark" href="#packs">View study packs</a>
+      <a class="btn ghost" href="#contact">Request a custom pack</a>
+    </div>
+    <p class="trustline">No exam dumps. No leaked questions. Every page written from scratch.</p>
+  </div>
+  <div class="stack">
+    <div class="study-card back-1"></div>
+    <div class="study-card back-2"></div>
+    <div class="study-card front">
+      <div class="card-topline"><span>Revision notes · Ch. 4</span><span>PDF</span></div>
+      <div class="card-title">Risk Response Planning</div>
+      <div class="card-body">Match each strategy to the risk type: <mark>avoid, transfer, mitigate, accept.</mark> Know the difference before the exam asks you to.</div>
+      <div class="pass-stamp">READY<br>FOR<br>EXAM</div>
+    </div>
+  </div>
+</div></header>
+
+<section id="packs"><div class="container">
+  <div class="sec-head">
+    <span class="eyebrow">Study packs</span>
+    <h2>Pick a pack, not a guessing game</h2>
+    <p class="muted">Downloadable PDF materials only — no video courses, no live classes, no fluff.</p>
+  </div>
+  <div class="grid3">
+    <div class="pack">
+      <div class="kicker">Quick prep</div>
+      <h3>Starter Notes</h3>
+      <p>Concise PDF notes covering the core concepts you need to build a foundation fast.</p>
+      <div class="price">₹499</div>
       <a class="btn" href="#contact">Get started</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <span class="eyebrow">ATS RESUME · LINKEDIN · INTERVIEW PREP</span>
-      <h1>Most resumes are rejected by <em>software</em>, not people.</h1>
-      <p class="lede">We rebuild your resume, LinkedIn profile and interview answers so the applicant tracking system lets you through — and the person reading it wants to call you.</p>
-      <div class="actions">
-        <a class="btn amber" href="#contact">Book a consultation</a>
-        <a class="btn ghost" href="#services">See services &amp; pricing</a>
-      </div>
-      <div class="trust-row">STARTING AT ₹299 · TURNAROUND IN 48 HOURS</div>
     </div>
-
-    <div class="scan-wrap">
-      <div class="scan-card" id="scanCard">
-        <div class="scan-head">
-          <div class="fname">RESUME_SCAN <strong>— Priya_Sharma.pdf</strong></div>
-          <div class="score-pill"><span class="dot"></span><span id="scoreLabel">Scanning…</span></div>
-        </div>
-        <div class="scan-body">
-          <div class="resume-line w1"></div>
-          <div class="resume-line w2"></div>
-          <div class="resume-line w3"><span class="kw" data-kw>Data Analysis</span></div>
-          <div class="resume-line w4"><span class="kw" data-kw>Stakeholder Management</span></div>
-          <div class="resume-line w5"><span class="kw" data-kw>SQL</span> &amp; <span class="kw" data-kw>Power BI</span></div>
-          <div class="resume-line w6"><span class="kw" data-kw>Cross-functional</span></div>
-          <div class="scan-line" id="scanLine"></div>
-        </div>
-        <div class="scan-foot">
-          <span class="label">ATS PARSE STATUS: <strong style="color:var(--good)">CLEAN</strong></span>
-          <span class="label kwcount">KEYWORDS MATCHED: <strong id="kwCount">0</strong>/6</span>
-        </div>
-      </div>
-      <p class="caption">This is roughly what happens to your resume before a recruiter ever sees it.</p>
+    <div class="pack">
+      <div class="kicker">Most requested</div>
+      <h3>Exam Prep Pack</h3>
+      <p>Notes, practice questions, mock-test resources and a study plan built around your exam date.</p>
+      <div class="price">₹999</div>
+      <a class="btn mark" href="#contact">Get started</a>
+    </div>
+    <div class="pack">
+      <div class="kicker">Full coverage</div>
+      <h3>Premium Pack</h3>
+      <p>A complete, structured set of PDF resources for candidates preparing over the long haul.</p>
+      <div class="price">₹1,499+</div>
+      <a class="btn" href="#contact">Request pack</a>
     </div>
   </div>
-</section>
+</div></section>
 
-<section id="services" class="services">
-  <div class="container">
-    <div class="section-head center">
-      <span class="eyebrow">SERVICES</span>
-      <h2>Fix the part of your application you can't see</h2>
-      <p>Pick a single service or bundle everything into one package. Every deliverable is built around the role you're actually applying for.</p>
-    </div>
-    <div class="svc-grid">
-      <div class="svc">
-        <span class="tab">.CV</span>
-        <h3>ATS Resume Rebuild</h3>
-        <p>Your resume restructured around the exact keywords the tracking software is scanning for — without turning into keyword soup.</p>
-        <div class="price">From ₹299 <span>/ resume</span></div>
-      </div>
-      <div class="svc">
-        <span class="tab">.LI</span>
-        <h3>LinkedIn Optimization</h3>
-        <p>Headline, About section and experience rewritten so recruiters searching your role actually find you.</p>
-        <div class="price">From ₹499 <span>/ profile</span></div>
-      </div>
-      <div class="svc">
-        <span class="tab">.IQ</span>
-        <h3>Career Guidance</h3>
-        <p>A practical read on your current profile, the gaps holding it back, and a plan for the roles worth targeting.</p>
-        <div class="price">From ₹499 <span>/ session</span></div>
-      </div>
-      <div class="svc">
-        <span class="tab">.IN</span>
-        <h3>Interview Preparation</h3>
-        <p>Mock questions for your target role, with structured answers you can actually remember under pressure.</p>
-        <div class="price">From ₹499 <span>/ session</span></div>
-      </div>
-      <div class="svc featured">
-        <span class="tab">.PKG</span>
-        <h3>Career Package</h3>
-        <p>Resume, LinkedIn and interview prep together — built as one consistent story instead of three disconnected fixes.</p>
-        <div class="price">From ₹1,499 <span>/ bundle</span></div>
-      </div>
-      <div class="svc">
-        <span class="tab">.AI</span>
-        <h3>AI Content Support</h3>
-        <p>Ongoing content for your personal brand — posts, summaries and outreach messages that sound like you.</p>
-        <div class="price">Custom quote</div>
-      </div>
+<section class="dark" id="how"><div class="container">
+  <div class="sec-head">
+    <span class="eyebrow">How it works</span>
+    <h2>Three questions, then you're studying</h2>
+    <p class="muted">Tell us what you're preparing for. We build the material around your exam, not the other way round.</p>
+  </div>
+  <div class="qsteps">
+    <div class="qstep"><div class="qnum">Q1</div><h3>Which certification?</h3><p>Share the name, level and your target exam date.</p></div>
+    <div class="qstep"><div class="qnum">Q2</div><h3>Which pack fits?</h3><p>Pick a ready-made pack, or request a custom one.</p></div>
+    <div class="qstep"><div class="qnum">Q3</div><h3>Study at your pace</h3><p>Download your PDFs and revise on your own schedule.</p></div>
+  </div>
+</div></section>
+
+<section id="certifications"><div class="container">
+  <div class="sec-head">
+    <span class="eyebrow">Certifications we cover</span>
+    <h2>Notes for the certification you're sitting</h2>
+    <p class="muted">Project management, cloud, IT, cybersecurity, data and business — one study library.</p>
+  </div>
+  <div class="certgrid">
+    <div class="cert"><span class="code">PM · 001</span><h3>PMP</h3><p>Project Management Professional notes, revision resources and practice questions.</p><a href="#contact">Request pack →</a></div>
+    <div class="cert"><span class="code">PM · 002</span><h3>PgMP</h3><p>Program Management Professional preparation and structured revision content.</p><a href="#contact">Request pack →</a></div>
+    <div class="cert"><span class="code">PM · 003</span><h3>PMI-ACP</h3><p>Agile project management concepts, practice resources and revision guides.</p><a href="#contact">Request pack →</a></div>
+    <div class="cert"><span class="code">PM · 004</span><h3>CAPM</h3><p>Foundation-level project management study materials for certification prep.</p><a href="#contact">Request pack →</a></div>
+    <div class="cert"><span class="code">CLD · 010</span><h3>AWS</h3><p>Learning resources for cloud fundamentals through professional-level paths.</p><a href="#contact">Request pack →</a></div>
+    <div class="cert"><span class="code">CLD · 011</span><h3>Microsoft Azure</h3><p>Azure-focused notes and practice resources for cloud certification prep.</p><a href="#contact">Request pack →</a></div>
+    <div class="cert"><span class="code">CLD · 012</span><h3>Google Cloud</h3><p>Cloud concepts, revision notes and practice resources for GCP certifications.</p><a href="#contact">Request pack →</a></div>
+    <div class="cert"><span class="code">IT · 020</span><h3>CompTIA</h3><p>IT, networking, security and cloud certification study resources.</p><a href="#contact">Request pack →</a></div>
+    <div class="cert"><span class="code">SEC · 021</span><h3>Cybersecurity</h3><p>Security-focused learning resources across cybersecurity certification paths.</p><a href="#contact">Request pack →</a></div>
+    <div class="cert"><span class="code">CRM · 030</span><h3>Salesforce</h3><p>CRM and Salesforce certification preparation notes and practice resources.</p><a href="#contact">Request pack →</a></div>
+    <div class="cert"><span class="code">DATA · 040</span><h3>Data & Analytics</h3><p>Study guides for data, analytics, databases and related certifications.</p><a href="#contact">Request pack →</a></div>
+    <div class="cert"><span class="code">BIZ · 050</span><h3>Business & Agile</h3><p>Business analysis, Scrum, Agile and professional development resources.</p><a href="#contact">Request pack →</a></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="container">
+  <div class="sec-head" style="margin-left:auto;margin-right:auto;text-align:center">
+    <span class="eyebrow">Answer key</span>
+    <h2>Frequently asked</h2>
+  </div>
+  <div class="faq">
+    <details><summary>Are these official certification materials?</summary><p>No. SmartDigitalHub is not an official certification provider, and these aren't official materials unless we say so explicitly.</p></details>
+    <details><summary>Do you sell exam dumps or leaked questions?</summary><p>No. Everything is written from scratch — original notes and practice questions, never leaked exam content.</p></details>
+    <details><summary>Can I request a custom pack?</summary><p>Yes. Send us the certification name and your target exam date, and we'll put one together.</p></details>
+    <details><summary>Do you work with learners outside India?</summary><p>Yes. We prepare candidates across India, the USA, the UK and Europe.</p></details>
+  </div>
+</div></section>
+
+<section id="contact"><div class="container">
+  <div class="cta">
+    <h2>Tell us your exam date</h2>
+    <p>We'll put together the right pack for the certification you're preparing for.</p>
+    <div class="actions" style="justify-content:center">
+      <a class="btn mark" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20certification%20study%20packs." target="_blank" rel="noopener">WhatsApp us</a>
     </div>
   </div>
-</section>
+</div></section>
 
-<section id="process">
-  <div class="container">
-    <div class="section-head center">
-      <span class="eyebrow">HOW IT WORKS</span>
-      <h2>Three steps, start to finish</h2>
-      <p>No long onboarding forms. Send what you have and tell us where you're headed.</p>
-    </div>
-    <div class="process-grid">
-      <div class="step">
-        <div class="stepnum">01</div>
-        <h3>Share your goal</h3>
-        <p>Send your current resume, LinkedIn link and the role or industry you're aiming for.</p>
-      </div>
-      <div class="step">
-        <div class="stepnum">02</div>
-        <h3>We rebuild it</h3>
-        <p>We restructure your materials for clarity, keyword coverage and impact — not just a fresh coat of formatting.</p>
-      </div>
-      <div class="step">
-        <div class="stepnum">03</div>
-        <h3>You apply, ready</h3>
-        <p>Go into applications and interviews with a profile that holds up under both the algorithm and the interviewer.</p>
-      </div>
-    </div>
+<section><div class="container">
+  <div class="disclaimer">
+    <h2>Important disclaimer</h2>
+    <p>SmartDigitalHub is an independent educational platform. We are not a governing body, certification authority, exam provider, or official training partner of PMI, AWS, Microsoft, Google, CompTIA, Salesforce, Scrum organizations, or any other certification organization, unless explicitly stated.</p>
+    <p>Our PDF study materials are independently created for educational and exam-preparation purposes. Certification names and trademarks belong to their respective owners.</p>
   </div>
-</section>
+</div></section>
 
-<section class="cta" id="contact">
-  <div class="container">
-    <span class="eyebrow">GET STARTED</span>
-    <h2 style="margin-top:12px">Ready to stop guessing why you're not hearing back?</h2>
-    <p>Tell us the role you're chasing and we'll tell you exactly what to fix first.</p>
-    <a class="btn amber" href="https://wa.me/919685081929?text=Hi%20Smart%20Digital%20Hub%2C%20I%20want%20career%20consulting%20services.">Chat on WhatsApp</a>
-  </div>
-</section>
-</main>
+<footer><div class="container foot">
+  <span>© 2026 SmartDigitalHub</span>
+  <span><a href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20certification%20study%20packs." target="_blank" rel="noopener" style="text-decoration:underline">WhatsApp us</a></span>
+  <span>Independent educational content · No exam dumps or leaked questions</span>
+</div></footer>
 
-<footer>
-  <div class="container footer">
-    <div>
-      <div class="fbrand">Smart Digital Hub</div>
-      <div class="small">AI-assisted career &amp; digital solutions</div>
-    </div>
-    <div class="foot-links">
-      <a class="social" href="https://www.linkedin.com/in/rishabh-vishwakarma-728ab0323" target="_blank" rel="noopener">LinkedIn ↗</a>
-    </div>
-    <div class="small">© 2026 Smart Digital Hub. All rights reserved.</div>
-  </div>
-</footer>
-
-<script>
-(function(){
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var card = document.getElementById('scanCard');
-  var scanLine = document.getElementById('scanLine');
-  var kws = document.querySelectorAll('[data-kw]');
-  var scoreLabel = document.getElementById('scoreLabel');
-  var kwCount = document.getElementById('kwCount');
-  var played = false;
-
-  function finish(){
-    kws.forEach(function(k){ k.classList.add('hit'); });
-    kwCount.textContent = kws.length;
-    scoreLabel.textContent = '94% match';
-    if(scanLine) scanLine.style.display = 'none';
-  }
-
-  function playScan(){
-    if(played) return;
-    played = true;
-    if(reduce){ finish(); return; }
-
-    var duration = 1800;
-    var start = null;
-    var cardHeight = card.querySelector('.scan-body').offsetHeight;
-
-    function step(ts){
-      if(!start) start = ts;
-      var elapsed = ts - start;
-      var progress = Math.min(elapsed / duration, 1);
-      scanLine.style.top = (progress * cardHeight) + 'px';
-
-      var hitIndex = Math.floor(progress * kws.length);
-      kws.forEach(function(k, i){
-        if(i < hitIndex) k.classList.add('hit');
-      });
-      kwCount.textContent = Math.min(hitIndex, kws.length);
-
-      if(progress < 1){
-        requestAnimationFrame(step);
-      } else {
-        finish();
-      }
-    }
-    requestAnimationFrame(step);
-  }
-
-  if('IntersectionObserver' in window){
-    var obs = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if(entry.isIntersecting){ playScan(); obs.disconnect(); }
-      });
-    }, {threshold:0.4});
-    obs.observe(card);
-  } else {
-    playScan();
-  }
-})();
-</script>
 </body>
 </html>
