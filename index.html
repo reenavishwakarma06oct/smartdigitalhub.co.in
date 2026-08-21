@@ -112,14 +112,14 @@ section{padding:96px 0}
 /* ---- Pricing ---- */
 .pricecard{background:var(--ink);color:var(--paper);border-radius:var(--radius);padding:32px;display:flex;flex-direction:column}
 .pricecard.featured{background:var(--coral);color:var(--ink)}
-.pricecard h3{font-size:20px;font-weight:600}
+.pricecard h3{font-size:20px;font-weight:600;margin:0 0 12px}
 .pricecard .badge{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;background:var(--gold);color:var(--ink);padding:4px 10px;border-radius:999px;margin-bottom:14px}
 .pricecard.featured .badge{background:var(--ink);color:var(--gold)}
-.price{margin:0 0 4px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.price{min-height:40px;margin:0;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .price .was{font-family:'Space Grotesk';font-size:16px;font-weight:500;text-decoration:line-through;opacity:.5}
-.price .now{font-family:'Fraunces',serif;font-size:34px;font-weight:600}
-.price small{font-family:'Space Grotesk';font-size:13px;font-weight:500;opacity:.65}
-.pricecard ul{list-style:none;padding:0;margin:20px 0 26px;flex:1}
+.price .now{font-family:'Fraunces',serif;font-size:34px;font-weight:600;line-height:1}
+.pricecard>small{display:block;font-family:'Space Grotesk';font-size:13px;font-weight:500;opacity:.6;margin:6px 0 0}
+.pricecard ul{list-style:none;padding:0;margin:22px 0 26px;flex:1}
 .pricecard li{padding:8px 0;font-size:14.5px;border-top:1px dashed rgba(255,255,255,.15)}
 .pricecard.featured li{border-top:1px dashed rgba(20,18,31,.2)}
 .pricecard li:first-child{border-top:none}
@@ -232,7 +232,7 @@ footer{padding:34px 0}
       <span class="badge">Save ₹4,000</span>
       <h3>Starter Website</h3>
       <div class="price"><span class="was">₹7,999</span><span class="now">₹3,999</span></div>
-      <small style="opacity:.6">one-time</small>
+      <small>one-time</small>
       <ul><li>Up to 5 pages</li><li>Mobile responsive</li><li>WhatsApp / contact CTA</li><li>Basic on-page SEO</li><li>1 revision round</li></ul>
       <a class="btn dark" href="#contact">Choose Starter</a>
     </div>
@@ -240,7 +240,7 @@ footer{padding:34px 0}
       <span class="badge">Save ₹8,000</span>
       <h3>Business Website</h3>
       <div class="price"><span class="was">₹14,999</span><span class="now">₹6,999</span></div>
-      <small style="opacity:.6">one-time</small>
+      <small>one-time</small>
       <ul><li>Up to 10 pages</li><li>Conversion-focused design</li><li>Full on-page SEO setup</li><li>Google Business Profile guidance</li><li>Analytics + Search Console setup</li></ul>
       <a class="btn on-paper" href="#contact">Choose Business</a>
     </div>
@@ -248,7 +248,7 @@ footer{padding:34px 0}
       <span class="badge">Launch price</span>
       <h3>Website + SEO</h3>
       <div class="price"><span class="now">₹9,999</span></div>
-      <small style="opacity:.6">one-time</small>
+      <small>one-time</small>
       <ul><li>Everything in Business Website</li><li>Keyword research &amp; content plan</li><li>Full on-page SEO setup</li><li>Search Console + analytics</li><li>30 days of post-launch support</li></ul>
       <a class="btn dark" href="#contact">Choose Website + SEO</a>
     </div>
@@ -256,7 +256,7 @@ footer{padding:34px 0}
       <span class="badge">Save ₹2,000/mo</span>
       <h3>Monthly SEO</h3>
       <div class="price"><span class="was">₹4,999</span><span class="now">₹2,999</span></div>
-      <small style="opacity:.6">/month</small>
+      <small>/month</small>
       <ul><li>Keyword research</li><li>Ongoing on-page optimization</li><li>SEO content plan</li><li>Local SEO support</li><li>Monthly performance report</li></ul>
       <a class="btn dark" href="#contact">Start SEO</a>
     </div>
@@ -264,7 +264,7 @@ footer{padding:34px 0}
       <span class="badge">Launch price</span>
       <h3>Local SEO</h3>
       <div class="price"><span class="now">₹1,999</span></div>
-      <small style="opacity:.6">/month</small>
+      <small>/month</small>
       <ul><li>Google Business Profile management</li><li>Local keyword targeting</li><li>Citation &amp; listing consistency</li><li>Monthly local visibility report</li></ul>
       <a class="btn dark" href="#contact">Start Local SEO</a>
     </div>
@@ -340,4 +340,26 @@ footer{padding:34px 0}
 document.getElementById("year").textContent = new Date().getFullYear();
 
 function sendWhatsApp(e){
-  e.preve
+  e.preventDefault();
+  const phone = "919685081929"; // WhatsApp number, country code included.
+  const text = `Hello SmartDigitalHub,%0A%0AName: ${encodeURIComponent(document.getElementById("name").value)}%0ABusiness: ${encodeURIComponent(document.getElementById("business").value)}%0AService: ${encodeURIComponent(document.getElementById("service").value)}%0AMessage: ${encodeURIComponent(document.getElementById("message").value)}`;
+  window.location.href = `https://wa.me/${phone}?text=${text}`;
+}
+
+// Rank counter: animate from #8 down to #1 once, unless reduced motion is requested
+(function(){
+  const el = document.getElementById("rankNum");
+  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(!el || prefersReduced) return;
+  const steps = [8,6,4,3,2,1];
+  let i = 0;
+  el.textContent = "#" + steps[0];
+  const timer = setInterval(()=>{
+    i++;
+    if(i >= steps.length){ clearInterval(timer); return; }
+    el.textContent = "#" + steps[i];
+  }, 260);
+})();
+</script>
+</body>
+</html>
