@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartDigitalHub.co.in | AI Images, Websites &amp; Technical SEO</title>
+<meta name="description" content="SmartDigitalHub.co.in provides affordable AI image creation, professional websites, technical SEO and website hosting for businesses, creators and professionals.">
+<meta name="keywords" content="AI image creation, AI business images, AI promotional images, AI product photography, single-page website, business website, website design, technical SEO services, SEO setup, website hosting, affordable website services, website for small business">
+
+<meta property="og:title" content="SmartDigitalHub.co.in | AI Images, Websites &amp; Technical SEO">
+<meta property="og:description" content="Affordable AI visuals, mobile-friendly websites and technical SEO for small businesses, creators and professionals.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://smartdigitalhub.co.in/">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2314172B'/%3E%3Ctext x='50' y='66' font-size='56' font-family='sans-serif' fill='%231FA855' text-anchor='middle'%3E$%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#14172B;
+    --ink-soft:#3A3F58;
+    --paper:#F3F2ED;
+    --paper-2:#FFFFFF;
+    --line:#D9D6C9;
+    --green:#1FA855;
+    --green-dark:#168040;
+    --amber:#E8A33D;
+    --red:#C24A3A;
+    --font-display:'Sora',sans-serif;
+    --font-body:'Inter',sans-serif;
+    --font-mono:'IBM Plex Mono',monospace;
+    --radius:2px;
+    --max:1180px;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--font-body);
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation:none !important; transition:none !important;}
+  }
+
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+  button{font-family:inherit; cursor:pointer;}
+
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 20px;}
+
+  h1,h2,h3,h4{font-family:var(--font-display); line-height:1.12; font-weight:700; letter-spacing:-0.01em;}
+  h2{font-size:clamp(1.7rem,4vw,2.5rem); font-weight:800;}
+  h3{font-size:1.15rem; font-weight:700;}
+  .mono{font-family:var(--font-mono);}
+
+  :focus-visible{outline:3px solid var(--green); outline-offset:2px;}
+
+  /* ---------- Ticket / receipt motif ---------- */
+  .stub{
+    background:var(--paper-2);
+    border:1px solid var(--line);
+    position:relative;
+  }
+  .stub::before{
+    content:"";
+    position:absolute; top:-1px; left:0; right:0; height:6px;
+    background-image: radial-gradient(circle at 8px 3px, var(--paper) 3px, transparent 3.5px);
+    background-size:16px 6px;
+    background-repeat:repeat-x;
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky; top:0; z-index:100;
+    background:var(--ink); color:var(--paper-2);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+    transition:box-shadow .2s ease;
+  }
+  header.scrolled{box-shadow:0 6px 18px rgba(0,0,0,0.18);}
+  .nav-row{
+    display:flex; align-items:center; justify-content:space-between;
+    height:64px;
+  }
+  .brand{
+    font-family:var(--font-display); font-weight:800; font-size:1.02rem; color:#fff;
+    display:flex; align-items:center; gap:8px;
+  }
+  .brand .dot{width:9px;height:9px;background:var(--green); border-radius:50%; display:inline-block;}
+  nav ul{display:flex; gap:28px; align-items:center;}
+  nav a{font-size:0.92rem; color:#D8D6CC; transition:color .15s;}
+  nav a:hover{color:#fff;}
+  .nav-cta{
+    background:var(--green); color:#08210F; font-weight:600; font-size:0.88rem;
+    padding:9px 16px; border-radius:var(--radius); display:inline-block;
+  }
+  .nav-cta:hover{background:var(--green-dark); color:#fff;}
+  .hamb{display:none; background:none; border:1px solid rgba(255,255,255,0.25); border-radius:4px; width:40px; height:40px; color:#fff; align-items:center; justify-content:center;}
+  .hamb span, .hamb span::before, .hamb span::after{
+    content:""; display:block; width:18px; height:2px; background:#fff; position:relative; transition:.2s;
+  }
+  .hamb span::before{position:absolute; top:-6px;}
+  .hamb span::after{position:absolute; top:6px;}
+  #mobile-menu{display:none;}
+  #mobile-menu.open{display:block;}
+  #mobile-menu ul{flex-direction:column; align-items:flex-start; gap:0; padding:8px 0 18px;}
+  #mobile-menu a{display:block; padding:12px 0; width:100%; border-bottom:1px solid rgba(255,255,255,0.07);}
+
+  @media (max-width:880px){
+    nav#desktop-nav{display:none;}
+    .hamb{display:flex;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:var(--ink); color:var(--paper-2);
+    padding:64px 0 56px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:""; position:absolute; right:-120px; top:-120px; width:420px; height:420px;
+    background:radial-gradient(circle, rgba(31,168,85,0.18), transparent 70%);
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.3fr 0.9fr; gap:48px; align-items:end; position:relative;
+  }
+  @media (max-width:880px){ .hero-grid{grid-template-columns:1fr;} }
+  .kicker{
+    font-family:var(--font-mono); font-size:0.78rem; color:var(--green); letter-spacing:0.02em;
+  }
+  .hero h1{
+    font-size:clamp(2.1rem,5.4vw,3.4rem); color:#fff; margin-top:14px; max-width:15ch;
+  }
+  .hero p.sub{
+    margin-top:18px; color:#C4C2B8; font-size:1.05rem; max-width:52ch;
+  }
+  .hero-ctas{margin-top:30px; display:flex; gap:14px; flex-wrap:wrap;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:13px 22px; border-radius:var(--radius); font-weight:600; font-size:0.95rem;
+    border:1px solid transparent; transition:transform .12s ease, background .15s;
+  }
+  .btn:active{transform:translateY(1px);}
+  .btn-primary{background:var(--green); color:#08210F;}
+  .btn-primary:hover{background:var(--green-dark); color:#fff;}
+  .btn-ghost{border-color:rgba(255,255,255,0.3); color:#fff;}
+  .btn-ghost:hover{border-color:#fff; background:rgba(255,255,255,0.06);}
+  .btn-dark{background:var(--ink); color:#fff;}
+  .btn-dark:hover{background:#000;}
+  .hero-note{margin-top:20px; font-size:0.82rem; color:#8D8B80; font-family:var(--font-mono);}
+
+  .hero-ticket{
+    background:var(--paper-2); color:var(--ink);
+    padding:26px 24px 22px;
+    border-radius:2px;
+  }
+  .hero-ticket .t-head{
+    display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:0.75rem; color:var(--ink-soft);
+    border-bottom:1px dashed var(--line); padding-bottom:12px; margin-bottom:14px;
+  }
+  .hero-ticket .t-row{
+    display:flex; justify-content:space-between; padding:8px 0; font-size:0.92rem;
+    border-bottom:1px solid var(--paper);
+  }
+  .hero-ticket .t-row span:last-child{font-family:var(--font-mono); font-weight:600;}
+  .hero-ticket .t-total{
+    display:flex; justify-content:space-between; margin-top:14px; padding-top:14px;
+    border-top:1px dashed var(--line); font-weight:700; font-family:var(--font-mono); font-size:1rem;
+  }
+
+  /* ---------- Section shell ---------- */
+  section{padding:70px 0;}
+  .section-head{max-width:640px; margin-bottom:40px;}
+  .section-head .kicker{color:var(--green-dark);}
+  .section-head h2{margin-top:10px;}
+  .section-head p{margin-top:12px; color:var(--ink-soft); font-size:1.02rem;}
+  section.on-dark{background:var(--ink); color:#fff;}
+  section.on-dark .section-head p{color:#B7B5AA;}
+  section.on-paper2{background:var(--paper-2);}
+
+  /* ---------- Services ---------- */
+  .svc-list{display:flex; flex-direction:column; border-top:1px solid var(--line);}
+  .svc-row{
+    display:grid; grid-template-columns:90px 1.3fr 1fr auto; gap:24px; align-items:start;
+    padding:28px 0; border-bottom:1px solid var(--line);
+  }
+  @media (max-width:800px){
+    .svc-row{grid-template-columns:1fr; gap:10px;}
+    .svc-row .svc-code{order:0;}
+  }
+  .svc-code{font-family:var(--font-mono); color:var(--green-dark); font-size:0.85rem; padding-top:4px;}
+  .svc-main p{color:var(--ink-soft); margin-top:8px; max-width:44ch;}
+  .svc-includes{font-size:0.88rem; color:var(--ink-soft);}
+  .svc-includes li{position:relative; padding-left:16px; margin-bottom:5px;}
+  .svc-includes li::before{content:"–"; position:absolute; left:0; color:var(--green-dark);}
+  .svc-price{text-align:right; white-space:nowrap;}
+  @media (max-width:800px){ .svc-price{text-align:left;} }
+  .svc-price .from{font-size:0.75rem; color:var(--ink-soft); font-family:var(--font-mono);}
+  .svc-price .amt{font-family:var(--font-mono); font-weight:600; font-size:1.15rem; display:block; margin:2px 0 10px;}
+  .svc-price .btn{padding:9px 16px; font-size:0.85rem;}
+
+  /* ---------- Pricing cards (ticket stubs) ---------- */
+  .ticket-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:18px;}
+  @media (max-width:980px){ .ticket-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:560px){ .ticket-grid{grid-template-columns:1fr;} }
+  .ticket{
+    padding:26px 20px 20px; display:flex; flex-direction:column; height:100%;
+  }
+  .ticket .badge{
+    align-self:flex-start; font-family:var(--font-mono); font-size:0.7rem; color:var(--ink);
+    background:var(--amber); padding:3px 8px; border-radius:2px; margin-bottom:12px;
+  }
+  .ticket h3{font-size:1.05rem;}
+  .ticket .price{
+    font-family:var(--font-mono); font-size:1.9rem; font-weight:600; margin:10px 0 2px; color:var(--green-dark);
+  }
+  .ticket .unit{font-size:0.82rem; color:var(--ink-soft); font-family:var(--font-mono);}
+  .ticket ul{margin:16px 0 20px; font-size:0.88rem; color:var(--ink-soft); flex-grow:1;}
+  .ticket ul li{position:relative; padding-left:16px; margin-bottom:6px;}
+  .ticket ul li::before{content:"–"; position:absolute; left:0; color:var(--green-dark);}
+  .ticket .btn{width:100%; justify-content:center; margin-top:auto;}
+
+  .pkg-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px;}
+  @media (max-width:760px){ .pkg-grid{grid-template-columns:1fr;} }
+  .pkg{padding:28px 24px;}
+  .pkg .price{font-family:var(--font-mono); font-size:2rem; font-weight:600; color:var(--green-dark); margin:10px 0 16px;}
+  .pkg ul{font-size:0.92rem; color:var(--ink-soft); margin-bottom:20px;}
+  .pkg ul li{position:relative; padding-left:16px; margin-bottom:7px;}
+  .pkg ul li::before{content:"–"; position:absolute; left:0; color:var(--green-dark);}
+  .pkg.featured{border:1.5px solid var(--green-dark);}
+
+  .hosting-box{
+    display:grid; grid-template-columns:1fr auto; gap:24px; align-items:center; padding:30px 26px;
+  }
+  @media (max-width:700px){ .hosting-box{grid-template-columns:1fr;} }
+  .hosting-box ul{font-size:0.92rem; color:var(--ink-soft); margin-top:12px; display:flex; flex-wrap:wrap; gap:6px 20px;}
+  .hosting-box ul li{position:relative; padding-left:16px;}
+  .hosting-box ul li::before{content:"–"; position:absolute; left:0; color:var(--green-dark);}
+  .disclaimer{
+    margin-top:16px; font-size:0.82rem; color:var(--ink-soft); font-style:italic; border-left:2px solid var(--amber); padding-left:12px;
+  }
+
+  /* ---------- How it works ---------- */
+  .steps{display:grid; grid-template-columns:repeat(4,1fr); gap:0; border-top:1px solid rgba(255,255,255,0.15);}
+  @media (max-width:880px){ .steps{grid-template-columns:1fr 1fr;} }
+  @media (max-width:520px){ .steps{grid-template-columns:1fr;} }
+  .step{padding:26px 20px 26px 0; border-bottom:1px solid rgba(255,255,255,0.15);}
+  .step .num{font-family:var(--font-mono); color:var(--green); font-size:0.85rem;}
+  .step h3{color:#fff; margin-top:10px; font-size:1.05rem;}
+  .step p{color:#B7B5AA; margin-top:8px; font-size:0.92rem;}
+
+  /* ---------- Audience ---------- */
+  .aud-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:16px;}
+  @media (max-width:980px){ .aud-grid{grid-template-columns:repeat(3,1fr);} }
+  @media (max-width:620px){ .aud-grid{grid-template-columns:repeat(2,1fr);} }
+  .aud{padding:22px 18px; border:1px solid var(--line); background:var(--paper-2);}
+  .aud h3{font-size:0.98rem;}
+  .aud p{font-size:0.85rem; color:var(--ink-soft); margin-top:8px;}
+
+  /* ---------- Portfolio ---------- */
+  .port-note{
+    font-size:0.82rem; color:var(--ink-soft); font-family:var(--font-mono); margin-top:-24px; margin-bottom:36px;
+  }
+  .port-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+  @media (max-width:880px){ .port-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:560px){ .port-grid{grid-template-columns:1fr;} }
+  .port-card{border:1px solid var(--line); background:var(--paper-2); overflow:hidden;}
+  .port-visual{aspect-ratio:4/3; width:100%; height:auto; display:block; object-fit:cover;}
+  .port-label{
+    padding:12px 14px; display:flex; justify-content:space-between; align-items:center;
+  }
+  .port-label .cat{font-size:0.9rem; font-weight:600;}
+  .port-label .sample-tag{
+    font-family:var(--font-mono); font-size:0.68rem; background:var(--paper); color:var(--ink-soft);
+    padding:3px 7px; border-radius:2px;
+  }
+
+  /* ---------- Why us ---------- */
+  .why-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:0; border-top:1px solid var(--line); border-left:1px solid var(--line);}
+  @media (max-width:980px){ .why-grid{grid-template-columns:repeat(3,1fr);} }
+  @media (max-width:620px){ .why-grid{grid-template-columns:repeat(2,1fr);} }
+  .why{padding:24px 18px; border-right:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .why h3{font-size:0.98rem;}
+  .why p{font-size:0.85rem; color:var(--ink-soft); margin-top:8px;}
+
+  /* ---------- Custom request ---------- */
+  .custom-box{
+    background:var(--ink); color:#fff; padding:48px 40px; display:grid; grid-template-columns:1.1fr 0.9fr; gap:36px; align-items:center;
+  }
+  @media (max-width:820px){ .custom-box{grid-template-columns:1fr;} }
+  .custom-box h2{color:#fff;}
+  .examples{font-family:var(--font-mono); font-size:0.85rem; color:#C4C2B8; display:flex; flex-direction:column; gap:10px;}
+  .examples li{border-left:2px solid var(--green); padding-left:12px;}
+
+  /* ---------- FAQ ---------- */
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-q{
+    width:100%; text-align:left; background:none; border:none; padding:20px 0;
+    display:flex; justify-content:space-between; align-items:center; font-family:var(--font-display); font-weight:600; font-size:1rem; color:var(--ink);
+  }
+  .faq-q .plus{font-family:var(--font-mono); font-size:1.2rem; color:var(--green-dark); transition:transform .18s;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height .22s ease;}
+  .faq-a p{padding:0 0 20px; color:var(--ink-soft); font-size:0.94rem; max-width:62ch;}
+
+  /* ---------- Final CTA ---------- */
+  .final-cta{
+    background:var(--green); color:#08210F; text-align:left; padding:58px 0;
+  }
+  .final-cta h2{color:#08210F;}
+  .final-cta p{margin-top:12px; max-width:56ch; color:#0E3A1E; font-size:1.05rem;}
+  .final-cta .hero-ctas{margin-top:26px;}
+  .final-cta .btn-primary{background:var(--ink); color:#fff;}
+  .final-cta .btn-primary:hover{background:#000;}
+  .final-cta .btn-ghost{border-color:#08210F; color:#08210F;}
+  .final-cta .btn-ghost:hover{background:rgba(8,33,15,0.08);}
+  .final-cta small{display:block; margin-top:18px; font-family:var(--font-mono); font-size:0.8rem; color:#0E3A1E;}
+
+  /* ---------- Contact ---------- */
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:32px;}
+  @media (max-width:760px){ .contact-grid{grid-template-columns:1fr;} }
+  .contact-list{border-top:1px solid var(--line);}
+  .contact-row{display:flex; justify-content:space-between; padding:16px 0; border-bottom:1px solid var(--line); font-size:0.95rem;}
+  .contact-row span:first-child{color:var(--ink-soft); font-family:var(--font-mono); font-size:0.82rem;}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--ink); color:#B7B5AA; padding:48px 0 24px; font-size:0.9rem;}
+  .foot-top{display:flex; justify-content:space-between; flex-wrap:wrap; gap:24px; padding-bottom:28px; border-bottom:1px solid rgba(255,255,255,0.1);}
+  .foot-links{display:flex; gap:28px; flex-wrap:wrap;}
+  .foot-links a:hover{color:#fff;}
+  .foot-bottom{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; padding-top:20px; font-size:0.8rem; font-family:var(--font-mono);}
+
+  /* ---------- WhatsApp floating button ---------- */
+  .wa-float{
+    position:fixed; right:18px; bottom:18px; z-index:200;
+    background:var(--green); color:#08210F; width:56px; height:56px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center; box-shadow:0 8px 20px rgba(0,0,0,0.25);
+  }
+  .wa-float:hover{background:var(--green-dark); color:#fff;}
+  .wa-float svg{width:26px; height:26px;}
+
+  .visually-hidden{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap;}
+</style>
+</head>
+<body>
+
+<header id="site-header">
+  <div class="wrap nav-row">
+    <a href="#top" class="brand"><span class="dot"></span>SmartDigitalHub.co.in</a>
+    <nav id="desktop-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-cta" href="https://wa.me/919685081929?text=Hi%20SmartDigitalHub.co.in%2C%20I%27d%20like%20to%20know%20more" target="_blank" rel="noopener">WhatsApp Us</a></li>
+      </ul>
+    </nav>
+    <button class="hamb" id="hamb-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      <span></span>
+    </button>
+  </div>
+  <div class="wrap" id="mobile-menu">
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="nav-cta" style="margin-top:12px;" href="https://wa.me/919685081929?text=Hi%20SmartDigitalHub.co.in%2C%20I%27d%20like%20to%20know%20more" target="_blank" rel="noopener">WhatsApp Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="padding-top:56px;">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker">SMARTDIGITALHUB.CO.IN — DIGITAL SERVICES STUDIO</p>
+        <h1>AI creatives, websites &amp; technical SEO for your business</h1>
+        <p class="sub">SmartDigitalHub.co.in helps businesses create professional AI visuals, launch mobile-friendly websites and build a stronger technical SEO foundation — without the cost of a traditional agency.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://wa.me/919685081929?text=Hi%20SmartDigitalHub.co.in%2C%20I%27d%20like%20to%20get%20started" target="_blank" rel="noopener">Get Started on WhatsApp</a>
+          <a class="btn btn-ghost" href="#services">View Services</a>
+        </div>
+        <p class="hero-note">AFFORDABLE · PROFESSIONAL · BUSINESS-FOCUSED</p>
+      </div>
+      <div class="hero-ticket stub" aria-hidden="true">
+        <div class="t-head"><span>SMARTDIGITALHUB.CO.IN</span><span>ORDER SLIP</span></div>
+        <div class="t-row"><span>AI Image Creation</span><span>from ₹99</span></div>
+        <div class="t-row"><span>Single-Page Website</span><span>from ₹4,999</span></div>
+        <div class="t-row"><span>Business Website</span><span>from ₹7,999</span></div>
+        <div class="t-row"><span>Technical SEO</span><span>from ₹2,999</span></div>
+        <div class="t-row"><span>Hosting &amp; Maintenance</span><span>from ₹2,999/yr</span></div>
+        <div class="t-row"><span>Content Writing</span><span>from ₹499</span></div>
+        <div class="t-total"><span>Delivered via</span><span>WhatsApp</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section-on-paper">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker mono">WHAT WE OFFER</p>
+        <h2>Digital services for your business</h2>
+        <p>Every service below can be ordered on its own or combined into a package. Send your requirement on WhatsApp to get started.</p>
+      </div>
+
+      <div class="svc-list">
+        <div class="svc-row">
+          <div class="svc-code">SVC-01</div>
+          <div class="svc-main">
+            <h3>AI Image Creation</h3>
+            <p>Professional AI-generated visuals for products, advertisements, promotions and social media.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>Product advertising images</li>
+            <li>Promotional posters</li>
+            <li>Product photography concepts</li>
+            <li>Food &amp; restaurant creatives</li>
+            <li>Fashion visuals</li>
+            <li>Festival promotions</li>
+            <li>Custom AI artwork</li>
+          </ul>
+          <div class="svc-price">
+            <span class="from">STARTING AT</span>
+            <span class="amt">₹99</span>
+            <a class="btn btn-dark" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20to%20order%20AI%20Images" target="_blank" rel="noopener">Order AI Images</a>
+          </div>
+        </div>
+
+        <div class="svc-row">
+          <div class="svc-code">SVC-02</div>
+          <div class="svc-main">
+            <h3>Single-Page Website</h3>
+            <p>A professional website with all your important business information on one responsive page.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>Mobile-friendly design</li>
+            <li>Business introduction</li>
+            <li>Services / products</li>
+            <li>About section</li>
+            <li>Contact information</li>
+            <li>WhatsApp button</li>
+            <li>Google Maps section</li>
+            <li>Basic SEO structure</li>
+          </ul>
+          <div class="svc-price">
+            <span class="from">STARTING AT</span>
+            <span class="amt">₹4,999</span>
+            <a class="btn btn-dark" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20a%20Single-Page%20Website" target="_blank" rel="noopener">Build My Website</a>
+          </div>
+        </div>
+
+        <div class="svc-row">
+          <div class="svc-code">SVC-03</div>
+          <div class="svc-main">
+            <h3>Business Website</h3>
+            <p>A larger website for businesses that need multiple pages or sections — home, about, services, portfolio and more.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>Home, About, Services</li>
+            <li>Products / Portfolio</li>
+            <li>Contact &amp; FAQ pages</li>
+            <li>Responsive design</li>
+            <li>Basic SEO-friendly structure</li>
+          </ul>
+          <div class="svc-price">
+            <span class="from">STARTING AT</span>
+            <span class="amt">₹7,999</span>
+            <a class="btn btn-dark" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20a%20Business%20Website" target="_blank" rel="noopener">Build My Business Website</a>
+          </div>
+        </div>
+
+        <div class="svc-row">
+          <div class="svc-code">SVC-04</div>
+          <div class="svc-main">
+            <h3>Technical SEO</h3>
+            <p>We improve the technical foundation of your website so search engines can crawl and understand it more easily.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>Meta title &amp; description</li>
+            <li>Heading structure</li>
+            <li>Sitemap.xml &amp; robots.txt</li>
+            <li>Canonical setup</li>
+            <li>Image &amp; mobile optimization</li>
+            <li>Basic page-speed improvements</li>
+            <li>Search Console setup guidance</li>
+            <li>Basic indexing checks</li>
+          </ul>
+          <div class="svc-price">
+            <span class="from">STARTING AT</span>
+            <span class="amt">₹2,999</span>
+            <a class="btn btn-dark" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20Technical%20SEO%20help" target="_blank" rel="noopener">Get Technical SEO</a>
+          </div>
+        </div>
+
+        <div class="svc-row">
+          <div class="svc-code">SVC-05</div>
+          <div class="svc-main">
+            <h3>Hosting &amp; Maintenance</h3>
+            <p>Keep your website online and receive basic maintenance support throughout the year.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>Website hosting</li>
+            <li>Basic website maintenance</li>
+            <li>Minor content updates</li>
+            <li>Basic technical support</li>
+            <li>Basic uptime / security checks</li>
+          </ul>
+          <div class="svc-price">
+            <span class="from">STARTING AT</span>
+            <span class="amt">₹2,999/yr</span>
+            <a class="btn btn-dark" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20Hosting%20%26%20Maintenance" target="_blank" rel="noopener">Get Hosting</a>
+          </div>
+        </div>
+
+        <div class="svc-row">
+          <div class="svc-code">SVC-06</div>
+          <div class="svc-main">
+            <h3>Content Writing</h3>
+            <p>Clear, business-ready writing for your website, products and promotions.</p>
+          </div>
+          <ul class="svc-includes">
+            <li>Website page content</li>
+            <li>Product descriptions</li>
+            <li>Blog &amp; article writing</li>
+            <li>Social media captions</li>
+            <li>Business profiles &amp; About Us content</li>
+            <li>SEO-friendly writing</li>
+          </ul>
+          <div class="svc-price">
+            <span class="from">STARTING AT</span>
+            <span class="amt">₹499</span>
+            <a class="btn btn-dark" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20Content%20Writing%20help" target="_blank" rel="noopener">Get Content Written</a>
+          </div>
+        </div>
+      </div>
+      <p class="disclaimer">Technical SEO improves your website's technical foundation. We do not promise guaranteed Google rankings.</p>
+    </div>
+  </section>
+
+  <!-- AI IMAGE PRICING -->
+  <section id="pricing" class="section-on-paper2 on-paper2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker mono">AI IMAGE PRICING</p>
+        <h2>AI image packages</h2>
+        <p>Order a single image or pick a pack for ongoing promotional content.</p>
+      </div>
+      <div class="ticket-grid">
+        <div class="ticket stub">
+          <h3>Single Image</h3>
+          <div class="price">₹99</div>
+          <div class="unit">1 image</div>
+          <ul>
+            <li>1 custom AI image</li>
+            <li>Custom concept</li>
+            <li>Digital delivery</li>
+          </ul>
+          <a class="btn btn-dark" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20to%20order%201%20AI%20Image" target="_blank" rel="noopener">Order Now</a>
+        </div>
+        <div class="ticket stub">
+          <h3>Starter Pack</h3>
+          <div class="price">₹399</div>
+          <div class="unit">5 AI images</div>
+          <ul>
+            <li>5 custom AI images</li>
+            <li>Multiple concepts</li>
+            <li>Business / social-media creatives</li>
+          </ul>
+          <a class="btn btn-dark" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20the%20Starter%20Pack%20(5%20AI%20images)" target="_blank" rel="noopener">Order Now</a>
+        </div>
+        <div class="ticket stub">
+          <span class="badge">MOST POPULAR</span>
+          <h3>Business Pack</h3>
+          <div class="price">₹699</div>
+          <div class="unit">10 AI images</div>
+          <ul>
+            <li>10 custom AI images</li>
+            <li>Multiple concepts</li>
+            <li>Promotional visuals</li>
+          </ul>
+          <a class="btn btn-primary" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20the%20Business%20Pack%20(10%20AI%20images)" target="_blank" rel="noopener">Order Now</a>
+        </div>
+        <div class="ticket stub">
+          <h3>Pro Pack</h3>
+          <div class="price">₹1,499</div>
+          <div class="unit">25 AI images</div>
+          <ul>
+            <li>25 custom AI images</li>
+            <li>Multiple concepts</li>
+            <li>Product &amp; promotional creatives</li>
+          </ul>
+          <a class="btn btn-dark" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20the%20Pro%20Pack%20(25%20AI%20images)" target="_blank" rel="noopener">Order Now</a>
+        </div>
+      </div>
+
+      <div class="stub" style="margin-top:18px; padding:26px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+        <div>
+          <h3>Monthly Creative Pack</h3>
+          <p style="color:var(--ink-soft); font-size:0.92rem; margin-top:6px; max-width:44ch;">Up to 30 AI promotional images per month. Suitable for businesses that need regular promotional creatives.</p>
+        </div>
+        <div style="text-align:right;">
+          <div class="price" style="font-size:1.6rem;">₹2,999<span style="font-size:0.9rem; color:var(--ink-soft);">/mo</span></div>
+          <a class="btn btn-dark" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20the%20Monthly%20Creative%20Pack" target="_blank" rel="noopener">Start Monthly Pack</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEBSITE PACKAGES -->
+  <section class="section-on-paper">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker mono">WEBSITE PACKAGES</p>
+        <h2>Website packages</h2>
+        <p>From a single page to a full launch package with visuals, SEO and hosting included.</p>
+      </div>
+      <div class="pkg-grid">
+        <div class="pkg stub">
+          <h3>Single-Page Website</h3>
+          <div class="price">₹4,999</div>
+          <ul>
+            <li>Responsive design</li>
+            <li>Business information</li>
+            <li>Services / products</li>
+            <li>Contact section</li>
+            <li>WhatsApp button</li>
+            <li>Basic SEO structure</li>
+          </ul>
+          <a class="btn btn-dark" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20a%20Single-Page%20Website" target="_blank" rel="noopener">Build My Website</a>
+        </div>
+        <div class="pkg stub">
+          <h3>Business Website</h3>
+          <div class="price">₹7,999</div>
+          <ul>
+            <li>Multiple pages / sections</li>
+            <li>Responsive design</li>
+            <li>Business information</li>
+            <li>Services / products</li>
+            <li>Contact &amp; WhatsApp integration</li>
+            <li>Basic SEO structure</li>
+          </ul>
+          <a class="btn btn-dark" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20a%20Business%20Website" target="_blank" rel="noopener">Build My Business Website</a>
+        </div>
+        <div class="pkg stub">
+          <h3>Website + Technical SEO</h3>
+          <div class="price">₹9,999</div>
+          <ul>
+            <li>Business website</li>
+            <li>Technical SEO setup</li>
+            <li>Sitemap &amp; robots.txt</li>
+            <li>Meta information</li>
+            <li>SEO-friendly structure</li>
+            <li>Basic indexing setup guidance</li>
+          </ul>
+          <a class="btn btn-dark" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20Website%20%2B%20Technical%20SEO" target="_blank" rel="noopener">Get Started</a>
+        </div>
+        <div class="pkg stub featured">
+          <span class="badge" style="display:inline-block; background:var(--green); color:#08210F; font-family:var(--font-mono); font-size:0.7rem; padding:3px 8px; margin-bottom:10px;">BUSINESS LAUNCH</span>
+          <h3>Business Launch Package</h3>
+          <div class="price">₹12,999</div>
+          <ul>
+            <li>Single-page professional website</li>
+            <li>Technical SEO setup</li>
+            <li>5 AI promotional images</li>
+            <li>WhatsApp integration</li>
+            <li>Mobile optimization</li>
+            <li>Sitemap &amp; robots.txt</li>
+            <li>Basic Search Console setup guidance</li>
+            <li>1 year hosting</li>
+          </ul>
+          <a class="btn btn-primary" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20the%20Business%20Launch%20Package" target="_blank" rel="noopener">Launch My Business</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOSTING -->
+  <section class="section-on-paper2 on-paper2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker mono">HOSTING &amp; MAINTENANCE</p>
+        <h2>Keep your website online</h2>
+      </div>
+      <div class="hosting-box stub">
+        <div>
+          <h3>Hosting &amp; Maintenance — ₹2,999/year</h3>
+          <ul>
+            <li>Hosting</li>
+            <li>Basic maintenance</li>
+            <li>Minor updates</li>
+            <li>Basic technical support</li>
+          </ul>
+          <p class="disclaimer">Hosting specifications, storage, bandwidth and renewal terms depend on the selected hosting plan. Renewal charges apply after the included period.</p>
+        </div>
+        <a class="btn btn-primary" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20Hosting%20%26%20Maintenance" target="_blank" rel="noopener">Get Hosting</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="on-dark">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker mono">HOW IT WORKS</p>
+        <h2>From idea to online presence</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">01</div>
+          <h3>Tell us what you need</h3>
+          <p>Send your business details, logo, product photos and requirements through WhatsApp.</p>
+        </div>
+        <div class="step">
+          <div class="num">02</div>
+          <h3>Choose your service</h3>
+          <p>Select AI images, a website, technical SEO, hosting — or a combination.</p>
+        </div>
+        <div class="step">
+          <div class="num">03</div>
+          <h3>We create</h3>
+          <p>We create your visuals and/or build your website according to the agreed requirements.</p>
+        </div>
+        <div class="step">
+          <div class="num">04</div>
+          <h3>Review &amp; delivery</h3>
+          <p>Review the completed work, request included revisions and receive your final deliverables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUDIENCE -->
+  <section class="section-on-paper">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker mono">WHO CAN USE OUR SERVICES?</p>
+        <h2>Built for businesses &amp; creators</h2>
+      </div>
+      <div class="aud-grid">
+        <div class="aud">
+          <h3>Local Businesses</h3>
+          <p>Restaurants, cafés, salons, gyms, shops and service businesses.</p>
+        </div>
+        <div class="aud">
+          <h3>Online Sellers</h3>
+          <p>Professional product visuals and websites for online businesses.</p>
+        </div>
+        <div class="aud">
+          <h3>Professionals</h3>
+          <p>Simple websites for consultants, freelancers, coaches and professionals.</p>
+        </div>
+        <div class="aud">
+          <h3>Creators</h3>
+          <p>AI visuals and promotional creatives for digital content.</p>
+        </div>
+        <div class="aud">
+          <h3>Startups &amp; Small Businesses</h3>
+          <p>Affordable digital solutions without the cost of a large agency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section-on-paper2 on-paper2">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker mono">PORTFOLIO</p>
+        <h2>Examples of what we create</h2>
+      </div>
+      <p class="port-note">Temporary stock photos shown as filler — swap in for real client work as it becomes available. <a href="https://pin.it/69CzQBm8C" target="_blank" rel="noopener" style="color:var(--green-dark); font-weight:600;">See more on Pinterest →</a></p>
+      <div class="port-grid">
+        <div class="port-card">
+          <img class="port-visual" loading="lazy" src="https://images.pexels.com/photos/4841273/pexels-photo-4841273.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1200&dpr=1" alt="Product Advertisement — sample concept" width="400" height="300">
+          <div class="port-label"><span class="cat">Product Advertising</span><span class="sample-tag">SAMPLE</span></div>
+        </div>
+        <div class="port-card">
+          <img class="port-visual" loading="lazy" src="https://images.pexels.com/photos/361184/asparagus-steak-veal-steak-veal-361184.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1200&dpr=1" alt="Restaurant Promotion — sample concept" width="400" height="300">
+          <div class="port-label"><span class="cat">Restaurant Creative</span><span class="sample-tag">SAMPLE</span></div>
+        </div>
+        <div class="port-card">
+          <img class="port-visual" loading="lazy" src="https://images.pexels.com/photos/34426766/pexels-photo-34426766.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1200&dpr=1" alt="Fashion Creative — sample concept" width="400" height="300">
+          <div class="port-label"><span class="cat">Fashion Visual</span><span class="sample-tag">SAMPLE</span></div>
+        </div>
+        <div class="port-card">
+          <img class="port-visual" loading="lazy" src="https://images.pexels.com/photos/7691112/pexels-photo-7691112.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1200&dpr=1" alt="Beauty Product Advertisement — sample concept" width="400" height="300">
+          <div class="port-label"><span class="cat">Beauty Creative</span><span class="sample-tag">SAMPLE</span></div>
+        </div>
+        <div class="port-card">
+          <img class="port-visual" loading="lazy" src="https://images.pexels.com/photos/3785784/pexels-photo-3785784.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1200&dpr=1" alt="Perfume Advertisement — sample concept" width="400" height="300">
+          <div class="port-label"><span class="cat">Perfume Creative</span><span class="sample-tag">SAMPLE</span></div>
+        </div>
+        <div class="port-card">
+          <img class="port-visual" loading="lazy" src="https://images.pexels.com/photos/4094847/pexels-photo-4094847.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1200&dpr=1" alt="Festival Promotion — sample concept" width="400" height="300">
+          <div class="port-label"><span class="cat">Festival Poster</span><span class="sample-tag">SAMPLE</span></div>
+        </div>
+        <div class="port-card">
+          <img class="port-visual" loading="lazy" src="https://images.pexels.com/photos/3760615/pexels-photo-3760615.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1200&dpr=1" alt="Business Poster — sample concept" width="400" height="300">
+          <div class="port-label"><span class="cat">Business Poster</span><span class="sample-tag">SAMPLE</span></div>
+        </div>
+        <div class="port-card">
+          <img class="port-visual" loading="lazy" src="https://images.pexels.com/photos/28347996/pexels-photo-28347996.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1200&dpr=1" alt="Landing Page Layout — sample concept" width="400" height="300">
+          <div class="port-label"><span class="cat">Landing Page</span><span class="sample-tag">SAMPLE</span></div>
+        </div>
+        <div class="port-card">
+          <img class="port-visual" loading="lazy" src="https://images.pexels.com/photos/18096281/pexels-photo-18096281.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1200&dpr=1" alt="Business Website Design — sample concept" width="400" height="300">
+          <div class="port-label"><span class="cat">Website Design</span><span class="sample-tag">SAMPLE</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section-on-paper">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker mono">WHY SMARTDIGITALHUB.CO.IN?</p>
+        <h2>Simple digital services for growing businesses</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why">
+          <h3>Affordable</h3>
+          <p>Services designed for small businesses and creators.</p>
+        </div>
+        <div class="why">
+          <h3>Professional</h3>
+          <p>Clean websites and high-quality digital creatives.</p>
+        </div>
+        <div class="why">
+          <h3>AI-Powered</h3>
+          <p>Modern AI technology helps create visuals efficiently.</p>
+        </div>
+        <div class="why">
+          <h3>Mobile-Friendly</h3>
+          <p>Websites designed to work across phones, tablets and desktops.</p>
+        </div>
+        <div class="why">
+          <h3>One Place</h3>
+          <p>AI images, websites, technical SEO and hosting support through SmartDigitalHub.co.in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOM REQUEST -->
+  <section class="section-on-paper2 on-paper2">
+    <div class="wrap">
+      <div class="custom-box">
+        <div>
+          <p class="kicker" style="color:var(--green);">NEED SOMETHING DIFFERENT?</p>
+          <h2>Tell us what you have in mind</h2>
+          <p style="color:#C4C2B8; margin-top:14px;">Every business is different. Send your requirement and we'll help you figure out the right service or combination.</p>
+          <a class="btn btn-primary" style="margin-top:24px;" href="https://wa.me/919685081929?text=Hi%2C%20here%27s%20what%20I%20need%3A%20" target="_blank" rel="noopener">Tell Us What You Need</a>
+        </div>
+        <ul class="examples">
+          <li>"Create a luxury product advertisement."</li>
+          <li>"Build a one-page website for my salon."</li>
+          <li>"Create promotional images for my restaurant."</li>
+          <li>"Fix the technical SEO issues on my website."</li>
+          <li>"Create a website and promotional images for my new business."</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section-on-paper">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker mono">FAQ</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div id="faq-list" style="border-top:1px solid var(--line); max-width:760px;">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What services does SmartDigitalHub.co.in provide?<span class="plus">+</span></button>
+          <div class="faq-a"><p>SmartDigitalHub.co.in provides AI image creation, single-page websites, business websites, technical SEO and website hosting/maintenance.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can I order only one AI image?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Yes. Single AI images start at ₹99.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can I provide my own product photo?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Yes. Customers can provide product photos, logos and other relevant materials.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you create custom AI images?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Yes. Customers can provide their concept, requirements and preferred style.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you provide website hosting?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Yes. Hosting and basic maintenance packages are available.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is technical SEO included with every website?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Basic SEO-friendly structure is included in website packages. Technical SEO services depend on the selected package.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can you guarantee Google rankings?<span class="plus">+</span></button>
+          <div class="faq-a"><p>No. SmartDigitalHub.co.in does not guarantee specific Google rankings. Technical SEO improves the website's technical foundation, but search rankings depend on many factors.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How do I order?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Click the WhatsApp button and send your requirements. After discussing the project and confirming the package, proceed with the agreed payment and delivery process.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can I combine services?<span class="plus">+</span></button>
+          <div class="faq-a"><p>Yes. Customers can combine AI images, website development, technical SEO and hosting.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="wrap">
+      <h2>Ready to get your business online?</h2>
+      <p>Whether you need one AI promotional image or a complete business website, SmartDigitalHub.co.in can help.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://wa.me/919685081929?text=Hi%2C%20I%27d%20like%20to%20start" target="_blank" rel="noopener">Start on WhatsApp</a>
+        <a class="btn btn-ghost" href="#pricing">View Pricing</a>
+      </div>
+      <small>Tell us your requirement and we'll help you choose the right service.</small>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-on-paper2 on-paper2">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="kicker mono">CONTACT</p>
+        <h2>Contact SmartDigitalHub.co.in</h2>
+        <p style="color:var(--ink-soft); margin-top:14px; max-width:44ch;">Send your requirement on WhatsApp and we'll get back to you during business hours.</p>
+        <a class="btn btn-primary" style="margin-top:22px;" href="https://wa.me/919685081929?text=Hi%20SmartDigitalHub.co.in" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+      <div class="contact-list">
+        <div class="contact-row"><span>WEBSITE</span><span>SmartDigitalHub.co.in</span></div>
+        <div class="contact-row"><span>WHATSAPP</span><span>+91 96850 81929</span></div>
+        <div class="contact-row"><span>HOURS</span><span>Mon–Sat, 10:00 AM–7:00 PM</span></div>
+        <div class="contact-row"><span>PINTEREST</span><span><a href="https://pin.it/69CzQBm8C" target="_blank" rel="noopener" style="color:var(--green-dark); font-weight:600;">View Portfolio</a></span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="brand" style="color:#fff;"><span class="dot"></span>SmartDigitalHub.co.in</div>
+        <p style="margin-top:8px; color:#8D8B80;">AI Creatives • Websites • Technical SEO • Hosting</p>
+      </div>
+      <div class="foot-links">
+        <a href="#top">Home</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="https://pin.it/69CzQBm8C" target="_blank" rel="noopener">Pinterest</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 SmartDigitalHub.co.in. All rights reserved.</span>
+      <span>MADE FOR SMALL BUSINESSES</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/919685081929?text=Hi%20SmartDigitalHub.co.in" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#08210F" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.26-1.38a9.9 9.9 0 0 0 4.78 1.22h.01c5.46 0 9.9-4.45 9.9-9.9C21.96 6.45 17.5 2 12.04 2zm5.8 14.13c-.24.68-1.4 1.3-1.93 1.38-.49.08-1.11.11-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.38.26-.28.57-.35.76-.35h.55c.18 0 .41-.07.64.49.24.57.81 1.97.88 2.11.07.14.11.3.02.49-.09.19-.14.3-.28.46-.14.16-.29.36-.42.48-.14.13-.28.28-.12.55.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.37-.23.62-.14.26.09 1.63.77 1.91.91.28.14.47.21.54.33.07.12.07.68-.17 1.36z"/></svg>
+</a>
+
+<script>
+  // Sticky header shadow
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 8);
+  }, { passive: true });
+
+  // Mobile menu
+  const hambBtn = document.getElementById('hamb-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hambBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hambBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hambBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const btn = item.querySelector('.faq-q');
+    const ans = item.querySelector('.faq-a');
+    btn.addEventListener('click', () => {
+      const open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(o => {
+        if (o !== item) {
+          o.classList.remove('open');
+          o.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+          o.querySelector('.faq-a').style.maxHeight = null;
+        }
+      });
+      if (open) {
+        item.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+        ans.style.maxHeight = null;
+      } else {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        ans.style.maxHeight = ans.scrollHeight + 'px';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
